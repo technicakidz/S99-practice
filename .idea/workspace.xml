@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d44b94eb-aa1f-4eb6-adc0-7bd6bcdaf9f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/S99-practice.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scala-practice/src/main/scala/example/P01.scala" beforeDir="false" afterPath="$PROJECT_DIR$/scala-practice/src/main/scala/example/P01.scala" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -7,18 +29,46 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="SbtLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$" value="PREVIEW" />
-        <entry key="$USER_HOME$/github/induction-training/sql/java-sample" value="PREVIEW" />
-        <entry key="$USER_HOME$/github/line-ads-platform-ads-management-api" value="PREVIEW" />
-        <entry key="$USER_HOME$/github/madka" value="PREVIEW" />
-        <entry key="$USER_HOME$/github/opteditor-for-lap" value="PREVIEW" />
-        <entry key="$USER_HOME$/github/opteditor-for-lap/server" value="PREVIEW" />
-        <entry key="$USER_HOME$/github/scala-st" value="PREVIEW" />
-        <entry key="$USER_HOME$/workspace/training3/play2-hands-on" value="PREVIEW" />
-      </map>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1pO0ebxByGREzqQy41JNMsMFZke" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.scala.settings.ScalaProjectSettingsConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d44b94eb-aa1f-4eb6-adc0-7bd6bcdaf9f8" name="Default Changelist" comment="" />
+      <created>1615038929768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615038929768</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="73" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615218812275">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="73" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1615218812275" />
+    <state x="204" y="326" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1615166712388">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="204" y="326" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1615166712388" />
+    <state x="480" y="47" key="SettingsEditor" timestamp="1615251592967">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="480" y="47" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1615251592967" />
   </component>
 </project>

@@ -6,7 +6,7 @@ object P01 {
     case x :: xs  => last(xs)
     case _        => sys.error("last isn't defined for empty list")
 
-    // コンスはリストの先頭に要素をくっつける
+    // コンス :: はリストの先頭に要素をくっつける
     /**
      * scala> val a = 1::Nil
      * val a: List[Int] = List(1)
