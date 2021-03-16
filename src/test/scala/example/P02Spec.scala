@@ -1,4 +1,5 @@
 package example
+
 import org.scalatest.{DiagrammedAssertions, FunSpec}
 
 class P02Spec extends FunSpec with DiagrammedAssertions {
