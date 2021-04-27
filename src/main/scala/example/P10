@@ -1,0 +1,24 @@
+package example
+
+import P09.pack
+import P04.length // rebaseして利用予定
+
+/**
+ * Run-length encoding of a list.
+ * Use the result of problem P09 to implement the so-called run-length encoding data compression method.
+ * Consecutive duplicates of elements are encoded as tuples (N, E) where N is the number of duplicates of the element E.
+ * Example:
+ * scala> encode(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+ * res0: List[(Int, Symbol)] = List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e))
+**/
+
+object P10 {
+  // collection の Map でなく 自前の map 関数定義
+  def map[A, B](list: List[A])(f: A => B): List[B] = list match {
+    case x::xs => f(x)::map(xs)(f)
+    case Nil => Nil
+  }
+  def encode[T](list:List[T]):List[(Int, T)] = {
+    map(pack(list)){x => (length(x), x.head)}
+  }
+}
