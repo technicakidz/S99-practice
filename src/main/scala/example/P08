@@ -1,0 +1,28 @@
+package example
+
+/**
+ * Eliminate consecutive duplicates of list elements.
+ * If a list contains repeated elements they should be replaced with a single copy of the element.
+ * The order of the elements should not be changed.
+ * Example:
+ * scala> compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e))
+ * res0: List[Symbol] = List('a, 'b, 'c, 'a, 'd, 'e)
+ */
+
+object P08 {
+  def compress[T](list: List[T]):List[T] = {
+    def compressB[T](a:T, list2:List[T]): List[T] = list2 match {
+      case x :: xs if a == x => compressB(x, xs)
+      case x :: xs => a :: compressB(x, xs)
+      case _ => a :: Nil
+    }
+    list match {
+      case x :: xs => compressB(x, xs)
+      case _ => Nil
+    }
+  }
+}
+
+// ミスメモ
+// compressBの引数 a の型定義．ここは List が剥がれた値がaに入る
+// case x :: xs => if hoge => ??? としてしまった文法エラー
