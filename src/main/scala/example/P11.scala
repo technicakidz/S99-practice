@@ -1,6 +1,6 @@
 package example
 
-import Util.map
+import java.util.map
 import P09.pack
 import P04.length
 
@@ -14,10 +14,10 @@ import P04.length
 
 object P11 {
   def encodeModified(list:List[T]):List[T] = {
-    map(pack(list)){x =>
+    Map(pack(list)){x =>
       length(x) match {
         case 1 => x.head
-        case _ => (i, x.head)
+        case i => (i, x.head)
       }
     }
   }
