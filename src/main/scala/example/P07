@@ -1,26 +1,45 @@
 package example
 
-/**
- * Flatten a nested list structure.
- * Example:
- * scala> flatten(List(List(1, 1), 2, List(3, List(5, 8))))
- * res0: List[Any] = List(1, 1, 2, 3, 5, 8)
- */
+import scala.annotation.tailrec
 
-object P07 {
-  def flatten(list: List[Any]): List[Any] =
+/**
+ * Reverse a list.
+ * Example:
+ * scala> reverse(List(1, 1, 2, 3, 5, 8))
+ * res0: List[Int] = List(8, 5, 3, 2, 1, 1)
+ */
+object P05 {
+  def foldLeft[A, B](list: List[A], b: B)(f: (B, A) => B): B = {
     list match {
-    case (x:List[_]) :: xs => flatten(x) ::: flatten(xs)
-    case x :: xs => x :: flatten(xs)
-    case _ => Nil
+      case x :: xs => foldLeft(xs, f(b, x))(f)
+      case Nil => b
+    }
+  }
+  def reverse[T](list:List[T]): List[T] = {
+    foldLeft(list, List[T]()){(b, a) => a::b}
   }
 }
 
-// `:::` はList同士を連結した新しいListを返す
-//   def :::[B >: A](prefix: List[B]): List[B] =
-//    if (isEmpty) prefix
-//    else if (prefix.isEmpty) this
-//    else (new ListBuffer[B] ++= prefix).prependToList(this)
+// 末尾再帰のアノテーション @tailrec を利用した解答例があった
+//object P05 {
+//  def reverse[T](list: List[T]): List[T] = {
+//    @tailrec
+//    def go(rem: List[T], acc: List[T]): List[T] =
+//      rem match {
+//        case Nil     => acc
+//        case x :: xs => go(xs, x :: acc)
+//      }
+//    go(list, Nil)
+//  }
+//}
 
-// scala> List(1, 2, 3) ::: List(4, 5, 6)
-//res0: List[Int] = List(1, 2, 3, 4, 5, 6)
+// 末尾再帰とは
+// 関数aが他関数を呼び出すとき最後(末尾)に呼ばれるもの
+// 以下でいうと関数c, dが末尾再帰となる
+//def a() {
+//  if b() {
+//  c()
+//  } else {
+//  d()
+//  }
+//}
