@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 object Hello extends Greeting with App {
   println(greeting)

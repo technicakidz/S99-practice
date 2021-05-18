@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 /**
  * Eliminate consecutive duplicates of list elements.

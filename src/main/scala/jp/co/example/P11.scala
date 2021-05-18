@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 import scala.util.map
 import P09.pack

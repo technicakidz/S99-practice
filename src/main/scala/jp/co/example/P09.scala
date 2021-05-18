@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 /**
  * Pack consecutive duplicates of list elements into sublists.

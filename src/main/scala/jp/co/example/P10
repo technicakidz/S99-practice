@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 import P09.pack
 import P04.length // rebaseして利用予定

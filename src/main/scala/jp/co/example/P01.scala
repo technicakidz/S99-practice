@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 object P01 {
   def last[T](list: List[T]): T = list match {

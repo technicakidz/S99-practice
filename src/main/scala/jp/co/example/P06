@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 /**
  * Find out whether a list is a palindrome.
