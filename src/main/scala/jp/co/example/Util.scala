@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 object Util {
   def map[A, B](list:List[A])(f:A => B):List[B] =

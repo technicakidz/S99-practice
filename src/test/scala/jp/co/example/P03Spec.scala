@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 import org.scalatest.{DiagrammedAssertions, FunSpec}
 

@@ -1,4 +1,4 @@
-package example
+package jp.co.example
 
 import org.scalacheck.Properties
 import org.scalacheck.Prop.{forAll, BooleanOperators}
