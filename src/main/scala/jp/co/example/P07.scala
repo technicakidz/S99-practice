@@ -8,7 +8,7 @@ import scala.annotation.tailrec
  * scala> reverse(List(1, 1, 2, 3, 5, 8))
  * res0: List[Int] = List(8, 5, 3, 2, 1, 1)
  */
-object P05 {
+object P07 {
   def foldLeft[A, B](list: List[A], b: B)(f: (B, A) => B): B = {
     list match {
       case x :: xs => foldLeft(xs, f(b, x))(f)
